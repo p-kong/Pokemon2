@@ -42,5 +42,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 ## Images + videos
 ![image](https://user-images.githubusercontent.com/48656715/218152857-bdd9b96d-f154-44e2-a150-7b2d3a6acaa8.png)
 
-https://user-images.githubusercontent.com/48656715/218155122-629593ce-6d1d-4596-ac96-ef1481958fba.mov
+
+https://user-images.githubusercontent.com/48656715/218163195-114336c2-6d3c-4408-80cc-12d9a716a976.mov
+
 
