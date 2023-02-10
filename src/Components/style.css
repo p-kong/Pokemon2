@@ -8,9 +8,9 @@
   /* width: 90%; */
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-  border-radius: 0px;
-  border: 3px solid black;
-  grid-gap: 10px;
+  border-radius: 1px;
+  border: 2px solid black;
+  grid-gap: 5px;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
 }
 
@@ -19,7 +19,6 @@
   justify-content: center;
   padding: 1.5rem 0;
   margin: 0.3rem;
-  border: 1px solid #efefef;
   border-radius: 0.2rem;
   min-width: 160px;
   text-align: center;
@@ -66,14 +65,14 @@
 .cardBack{
   border-radius: 5px;
   border: 1px solid black;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+  /* box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089); */
 }
 
 .rock {
   background-color: rgb(148, 81, 81);
 }
 .ghost {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(220, 216, 216);
 }
 .electric {
   background-color: rgb(255, 255, 161);
@@ -98,4 +97,27 @@
 }
 .water {
   background-color:#E0F1FD;
+}
+.fighting {
+  background-color:#f7d2b9;
+}
+.psychic {
+  background-color:#e2c1f4;
+}
+.btn-group{
+  display: flex;
+  align-self: flex-end;
+}
+
+.btn-group button {
+  outline: none;
+  border: none;
+  width: 250px;
+  padding: 0.3rem 0;
+  margin: 1rem;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background-color: #B74555;
+  border-radius: 8px;
 }

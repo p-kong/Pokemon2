@@ -4,7 +4,7 @@ import ReactCardFlip from 'react-card-flip'
 export default function Card({pokemon}) {
 
   const [isFlipped, setIsFlipped] = useState(false);
-  let style = `${pokemon.types[0].type.name} "cardFront"`
+  let style = `${pokemon.types[0].type.name} "container"`
 
   return (
     <div className = "container">

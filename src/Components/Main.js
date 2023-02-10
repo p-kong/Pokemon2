@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import Card from './Card'
 
+
 export default function Main() {
 
   const [pokemon, setPokemon] = useState([])
@@ -14,7 +15,7 @@ export default function Main() {
     setLoading(true)
     const res = await axios.get(currentUrl)
     setNextPageUrl(res.data.next)
-    setPrevPageUrl(res.data.prev)
+    setPrevPageUrl(res.data.previous)
     getIndividualPokemon(res.data.results)
     setLoading(false)
     console.log('res', res.data)
@@ -32,7 +33,9 @@ export default function Main() {
   }
 
   useEffect(() => {
+    setLoading(true)
     retrieveData()
+    setLoading(false)
   },[currentUrl])
 
   return (
@@ -41,7 +44,20 @@ export default function Main() {
         {pokemon.map((p)=> (
           <Card pokemon={p} key={p.id}/>
         ))}
+          <div className="btn-group">
+            {prevPageUrl && <button onClick= {()=> {
+              setPokemon([])
+              setCurrentUrl(prevPageUrl)
+            }}>Previous</button>}
+
+          {nextPageUrl && <button onClick= {()=> {
+              setPokemon([])
+              setCurrentUrl(nextPageUrl)
+            }}>Next</button>}
+
+          </div>
       </div>
+
     </div>
   )
 }
