@@ -1,0 +1,101 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'sans-serif';
+}
+
+.container{
+  /* width: 90%; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  border-radius: 0px;
+  border: 3px solid black;
+  grid-gap: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+}
+
+.container .card{
+  display: grid;
+  justify-content: center;
+  padding: 1.5rem 0;
+  margin: 0.3rem;
+  border: 1px solid #efefef;
+  border-radius: 0.2rem;
+  min-width: 160px;
+  text-align: center;
+
+}
+
+.rock {
+  background-color: rgb(148, 81, 81);
+}
+.ghost {
+  background-color: rgb(247, 247, 247);
+}
+.electric {
+  background-color: rgb(255, 255, 161);
+}
+.bug {
+  background-color: #F6D6A7;
+}
+.poison {
+  background-color: #e0a7f6;
+}
+.normal {
+  background-color: #F4F4F4;
+}
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863);
+}
+.fire {
+  background-color: #FBE3DF;
+}
+.grass {
+  background-color:#E2F9E1;
+}
+.water {
+  background-color:#E0F1FD;
+}
+
+.cardFront{
+  border-radius: 5px;
+  border: 1px solid black;
+  /* box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089); */
+}
+
+.cardBack{
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+}
+
+.rock {
+  background-color: rgb(148, 81, 81);
+}
+.ghost {
+  background-color: rgb(247, 247, 247);
+}
+.electric {
+  background-color: rgb(255, 255, 161);
+}
+.bug {
+  background-color: #F6D6A7;
+}
+.poison {
+  background-color: #e0a7f6;
+}
+.normal {
+  background-color: #F4F4F4;
+}
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863);
+}
+.fire {
+  background-color: #FBE3DF;
+}
+.grass {
+  background-color:#E2F9E1;
+}
+.water {
+  background-color:#E0F1FD;
+}
